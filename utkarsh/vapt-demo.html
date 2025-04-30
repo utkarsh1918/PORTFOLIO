@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VAPT Assessment | Project Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: radial-gradient(circle, #00ffff25, #000);
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+    .tools-used span {
+      display: inline-block;
+      background: #00ffff10;
+      color: #00ffff;
+      padding: 6px 12px;
+      margin: 5px 8px 5px 0;
+      border: 1px solid #00ffff80;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+    ul { margin-left: 20px; padding-left: 10px; }
+    ul li { margin-bottom: 8px; }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      transition: transform 0.3s;
+    }
+    .screenshots img:hover {
+      transform: scale(1.03);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .cta a {
+      text-decoration: none;
+      background: linear-gradient(to right, #00ffff, #00cccc);
+      padding: 14px 28px;
+      border-radius: 30px;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 15px #00ffff;
+      transition: all 0.3s ease;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00cccc, #00ffff);
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      margin-top: 60px;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛡️ VAPT Assessment</h1>
+    <p>Vulnerability Analysis | Exploitation Simulation | Security Hardening</p>
+  </header>
+
+  <section>
+    <h2>📋 Project Overview</h2>
+    <p>
+      This VAPT (Vulnerability Assessment & Penetration Testing) project focused on identifying, exploiting, and reporting security flaws in a simulated enterprise-grade web application. The goal was to test the system's resistance against real-world attack vectors using both manual techniques and automated tools. All findings were documented in a professional penetration test report with severity ratings and recommended mitigations.
+    </p>
+  </section>
+
+  <section>
+    <h2>⚙️ Assessment Methodology</h2>
+    <ul>
+      <li><strong>Reconnaissance:</strong> Network and application scanning using Nmap & WhatWeb.</li>
+      <li><strong>Vulnerability Scanning:</strong> Automated scanning using OWASP ZAP & Nikto.</li>
+      <li><strong>Manual Exploitation:</strong> Performed manual SQL Injection, XSS, and IDOR testing using Burp Suite.</li>
+      <li><strong>Post-Exploitation:</strong> Used Metasploit to simulate remote shell access & privilege escalation.</li>
+      <li><strong>Reporting:</strong> Documented vulnerabilities with screenshots, CVSS scores, and patch recommendations.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧰 Tools & Techniques Used</h2>
+    <div class="tools-used">
+      <span>Burp Suite</span>
+      <span>OWASP ZAP</span>
+      <span>Metasploit Framework</span>
+      <span>Nmap</span>
+      <span>Kali Linux</span>
+      <span>SQL Injection</span>
+      <span>XSS Testing</span>
+      <span>Directory Bruteforce</span>
+      <span>CVSS Scoring</span>
+      <span>IDOR Exploitation</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚨 Key Vulnerabilities Discovered</h2>
+    <ul>
+      <li><strong>SQL Injection:</strong> Critical vulnerability in login endpoint allowed full DB dump.</li>
+      <li><strong>Reflected XSS:</strong> Found on multiple GET parameters, vulnerable to cookie theft & redirection attacks.</li>
+      <li><strong>IDOR (Insecure Direct Object Reference):</strong> Unauthenticated access to user profiles via predictable IDs.</li>
+      <li><strong>Directory Listing Enabled:</strong> Web server disclosed file structure due to misconfiguration.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Risk Matrix & Recommendations</h2>
+    <ul>
+      <li><strong>High:</strong> SQLi → Use parameterized queries, implement WAF rules.</li>
+      <li><strong>Medium:</strong> IDOR → Enforce session-based access controls.</li>
+      <li><strong>Medium:</strong> XSS → Apply output encoding, CSP headers.</li>
+      <li><strong>Low:</strong> Directory Listing → Disable in server config, use `.htaccess` rules.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🖼️ Visual Evidence</h2>
+    <div class="screenshots">
+      <img src="c:\Users\UTKARSH\Desktop\Thumbnail_BurpSuite.png" alt="Burp Suite Evidence"/>
+      <img src="c:\Users\UTKARSH\Desktop\baseline-af.png" alt="ZAP Report Screenshot"/>
+      <img src="c:\Users\UTKARSH\Desktop\msf2-9.png" alt="Metasploit Shell Access"/>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>📥 Want to See the Full Technical Report?</h2>
+    <!-- <p>Includes full PoCs, screenshots, CVE mappings, and mitigation strategies.</p> -->
+    <a href="mailto:utkarsh200119singh@gmail.com">📧 Request Full Report</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Utkarsh Singh | Ethical Hacking & Cybersecurity Projects
+  </footer>
+
+</body>
+</html>

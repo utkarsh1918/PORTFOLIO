@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DDoS Attack Analysis | Project Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: radial-gradient(circle, #00ffff25, #000);
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .intro-line {
+      text-align: center;
+      margin: 30px auto;
+      font-size: 1.2rem;
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      max-width: 900px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+
+    .tools-used span {
+      display: inline-block;
+      background: #00ffff10;
+      color: #00ffff;
+      padding: 6px 12px;
+      margin: 5px 8px 5px 0;
+      border: 1px solid #00ffff80;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      transition: transform 0.3s;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.03);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: linear-gradient(to right, #00ffff, #00cccc);
+      padding: 14px 28px;
+      border-radius: 30px;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 15px #00ffff;
+      transition: all 0.3s ease;
+    }
+
+    .cta a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00cccc, #00ffff);
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      margin-top: 60px;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌐 DDoS Attack Analysis</h1>
+    <p>Simulated Denial-of-Service Detection | Packet Analysis | Mitigation Insights</p>
+  </header>
+
+  <p class="intro-line">
+    I'm Utkarsh Singh — a cybersecurity enthusiast, full-stack developer, and ethical hacker committed to safeguarding digital ecosystems and engineering innovative, future-ready applications.
+  </p>
+
+  <section>
+    <h2>📋 Project Overview</h2>
+    <p>
+      This project focused on identifying, simulating, and analyzing Distributed Denial-of-Service (DDoS) attacks using traffic capture and detection methods. It includes packet sniffing, protocol-based filtering, traffic anomaly visualization, and response strategies using IDS/IPS systems.
+    </p>
+  </section>
+
+  <section>
+    <h2>🧰 Tools & Techniques Used</h2>
+    <div class="tools-used">
+      <span>Wireshark</span>
+      <span>Snort IDS</span>
+      <span>Python Scapy</span>
+      <span>TCPDump</span>
+      <span>LOIC (Simulated)</span>
+      <span>Traffic Analysis</span>
+      <span>Packet Filtering</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔍 Key Insights</h2>
+    <ul>
+      <li>Detection of SYN Flood patterns in network packets.</li>
+      <li>Utilization of real-time packet inspection via Snort IDS rules.</li>
+      <li>Simulation of DDoS traffic using controlled LOIC tools in isolated networks.</li>
+      <li>Custom Python scripts using Scapy to analyze packet behaviors and frequency.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧠 Learning Outcomes</h2>
+    <p>
+      Through this project, I deepened my understanding of network protocols, real-time detection mechanisms, and cyber-attack response strategies. It provided hands-on experience with both attack simulation and mitigation techniques, enhancing my capability to architect secure systems.
+    </p>
+  </section>
+
+  <section>
+    <h2>🖼️ Screenshots</h2>
+    <div class="screenshots">
+      <img src="c:\Users\UTKARSH\Desktop\14MConversation.jpeg" alt="Wireshark DDoS Analysis"/>
+      <img src="c:\Users\UTKARSH\Desktop\verify_install.png" alt="Snort IDS Logs"/>
+      <img src="c:\Users\UTKARSH\Desktop\icmp_2.jpg" alt="ICMP Traffic Screenshot"/>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>📥 Want to See the Full Technical Report?</h2>
+    <a href="mailto:utkarsh200119singh@gmail.com">📧 Request Full Report</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Utkarsh Singh | Cybersecurity Project: DDoS Simulation & Defense
+  </footer>
+
+</body>
+</html>
